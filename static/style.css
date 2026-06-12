@@ -727,7 +727,7 @@ footer span { color: rgba(255,255,255,0.25); }
 .fade-up-d4 { animation-delay: 0.46s; }
 
 /* ── RESPONSIVE ── */
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
   html, body { overflow-x: hidden; }
   nav {
     padding: 1rem 1.5rem;
