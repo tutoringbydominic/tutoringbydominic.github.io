@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Consultation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./static/style.css">
+  <script src="./static/script.js"></script>
+</head>
+<body>
+
+<header>
+    <!-- Will Generate -->
+</header>
+
+<div class="page-content">
+  <div class="contact-layout">
+    <div class="contact-aside">
+      <span class="eyebrow text-gold-light">Application</span>
+      <h2 class="text-white-override">Apply for a consultation.</h2>
+      <div class="divider"></div>
+      <p>Before booking a free 15-minute introductory call, I ask all families to complete this short intake form. It helps me understand your student's exact situation so we can make the most of our first conversation.</p>
+      <p>Applications are reviewed within 48 hours. If it looks like a good fit, you'll receive a booking link to schedule your consultation.</p>
+
+      <div class="contact-details">
+        <div class="contact-detail-item">
+          <div class="dot"></div>
+          <div>
+            <strong>Session Rate</strong>
+            <span>$45 / hour — in-person & online</span>
+          </div>
+        </div>
+        <div class="contact-detail-item">
+          <div class="dot"></div>
+          <div>
+            <strong>Location</strong>
+            <span>Dover, NH area public libraries and campus spaces — or online via secure video link</span>
+          </div>
+        </div>
+        <div class="contact-detail-item">
+          <div class="dot"></div>
+          <div>
+            <strong>Availability</strong>
+            <span>Limited roster of independent students per semester. First-come, first-served.</span>
+          </div>
+        </div>
+        <div class="contact-detail-item">
+          <div class="dot"></div>
+          <div>
+            <strong>Subjects</strong>
+            <span>Physics Mechanics · Foundational Math · Intro Programming</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-area">
+      <span class="eyebrow">Intake Form</span>
+      <h2>Tell me about<br>your student.</h2>
+
+      <div class="form-note">
+        All fields marked <strong class="text-gold-marker">*</strong> are required. The more specific you are about your student's current challenges, the better I can assess fit before our call.
+      </div>
+
+      <div id="intake-form">
+        <div class="form-row">
+          <div class="field">
+            <label>Parent / Guardian Name <span class="req">*</span></label>
+            <input type="text" id="parent-name" placeholder="Full name">
+          </div>
+          <div class="field">
+            <label>Contact Email <span class="req">*</span></label>
+            <input type="email" id="parent-email" placeholder="your@email.com">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label>Student Name <span class="req">*</span></label>
+            <input type="text" id="student-name" placeholder="First name is fine">
+          </div>
+          <div class="field">
+            <label>Grade Level <span class="req">*</span></label>
+            <select id="grade-level">
+              <option value="">— Select —</option>
+              <option>6th Grade</option>
+              <option>7th Grade</option>
+              <option>8th Grade</option>
+              <option>9th Grade</option>
+              <option>10th Grade</option>
+              <option>11th Grade</option>
+              <option>12th Grade</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Subject Needed <span class="req">*</span></label>
+          <select id="subject">
+            <option value="">— Select primary subject —</option>
+            <option>Physics Mechanics</option>
+            <option>Foundational Mathematics (Algebra / Geometry / Trig)</option>
+            <option>Pre-Calculus</option>
+            <option>Introductory Programming (Python / C++)</option>
+            <option>Multiple subjects</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Course Title & Textbook / Syllabus <span class="req">*</span></label>
+          <input type="text" id="course-info" placeholder="e.g. AP Physics 1 — Halliday & Resnick, 10th ed.">
+        </div>
+
+        <div class="field">
+          <label>Preferred Format</label>
+          <select id="format-pref">
+            <option value="">— No preference —</option>
+            <option>In-person (Dover, NH area)</option>
+            <option>Online only</option>
+            <option>Either — flexible</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Student's Primary Challenge <span class="req">*</span></label>
+          <textarea id="challenge" placeholder="Describe in your own words — e.g. 'She understands examples in class but freezes on novel exam problems,' or 'He keeps getting syntax right but can't debug logical errors in his code.'"></textarea>
+        </div>
+
+        <button class="btn-primary form-submit-btn" onclick="submitForm()">Submit Application →</button>
+      </div>
+
+      <div class="form-success" id="form-success">
+        <div class="success-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+        <h3>Application received.</h3>
+        <p>Thank you. I'll review your submission and be in touch within 48 hours. If it looks like a strong fit, you'll receive a link to book your free 15-minute consultation.</p>
+        <p class="success-note">CHECK YOUR INBOX FOR CONFIRMATION</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <!-- Will Generate -->
+</footer>
+
+<script src="./static/script.js"></script>
+</body>
+</html>
